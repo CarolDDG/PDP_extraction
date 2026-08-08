@@ -1,0 +1,258 @@
+# 🧪 [Qwen3.5-0.8B] 原始未经微调基座模型 (Raw Base Model) 测试集对比报告
+
+- **评估模型 (Model Name)**: `Qwen3.5-0.8B`
+- **基础模型路径 (Base Model Path)**: `/mnt/d/LLM_OCR/models/Qwen3.5-0.8B`
+- **模型状态 (Model Status)**: `原始未经微调基座模型 (Raw Base Model)`
+- **评估测试集文件 (Test File)**: `test_manifest.json`
+- **成功评估样本数 (Evaluated Samples)**: 31 / 31
+- **⏱️ 推理总耗时 (Total Duration)**: `375.82 秒` (6.26 分钟)
+- **⚡ 单图平均耗时 (Avg Time / Image)**: `12.12 秒/张`
+
+## 📷 样本 1: images/PROYA_Ruby_image23.png
+
+⏱️ *单图推理耗时: 2.10 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| NEW首次采用（9）氮充储存工艺 隔氧避光牢锁成分鲜活性 | NEW首次采用9<br>氮充储存工艺<br>隔氧避光<br>牢锁成分鲜活性<br>PROYA<br>ADVANCED<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 2: images/Cetaphil_image16.png
+
+⏱️ *单图推理耗时: 14.86 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 局部厚敷救急<br>局部红敏舒缓<br>起皮干痒修护<br>妆前滋润不卡粉<br>成年人用量建议<br>取用适量产品用双手轻轻温热抹开<br>涂抹在身体及面部肌肤上<br>轻轻抹开按摩至完全吸收<br>可着重涂于肌肤干燥部分(如手肘/膝盖/脚踝等)<br>使用于全身肌肤，如肌肤干痒敏感时可以加大用量，建议2个月用完一罐（550g） | 局部厚敷救急<br>局部红敏舒缓<br>起皮干痒修护<br>妆前滋润不卡粉<br>成年人用量建议<br>取用适量产品<br>用双手轻轻温热抹开<br>涂抹在身体及<br>面部肌肤上<br>轻轻抹开<br>按摩至完全吸收<br>可着重涂于肌肤<br>干燥部分<br>（如手纹/皱纹/褶皱等）<br>使用于全身肌肤，如肌肤干痒敏感时可以加大用量，建议2个月<br>用完一罐（550g）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） |
+
+## 📷 样本 3: images/LOreal_Ampoule_Mask_image13.png
+
+⏱️ *单图推理耗时: 15.15 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 随时随地 补水修护<br>熬夜/加班状态差<br>日常保湿舒缓<br>晒后（19）救急<br>出游维稳（18） | 随时随地 补水修护<br>熬夜/加班状态差<br>日常保湿舒缓<br>晒后 救急<br>出游维稳<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （ |
+
+## 📷 样本 4: images/Clarins_image08.png
+
+⏱️ *单图推理耗时: 15.17 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| +46% 皱纹增加<br>+13% 肤色暗沉<br>+30% 肌肤松垮<br>全新（VI）[外源扛老科技]（IX） | +46%<br>皱纹增加<br>+13%<br>肤色暗沉<br>+30%<br>肌肤松垮<br>全新VI「外源扛老科技」IX<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） |
+
+## 📷 样本 5: images/SkinCeuticals_image14.png
+
+⏱️ *单图推理耗时: 14.82 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| -45%（6） 醣化终产物 保护更多健康胶原<br>红色区域越浅 表明醣化终产物越少<br>全新添加 0.2%甘草酸二钾(20) 协同配方抗醣<br>-142% (6) 基底膜结构损伤 真表皮链接更紧密 皮肤更紧致<br>绿色荧光越强 皮肤越紧致 | -45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>全新添加 0.2% 甘草酸二钾²⁰<br>协同配方抗糖<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤<br>真表皮链接更紧密<br>皮肤更紧致<br>使用前<br>使用后<br>-45% 醌化终产物<br>保护更多健康胶原<br>使用前<br>使用后<br>-142% 基底膜结构损伤 |
+
+## 📷 样本 6: images/SKII_image05.png
+
+⏱️ *单图推理耗时: 15.93 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| SK-II CRYBABY 神仙水（R）七夕联名礼盒 万千挚爱好礼 1周紧致透亮（1） | SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮<br>SK-II POP MART<br>SK-II CRYBABY 神仙水七夕联名礼盒<br>万千挚爱好礼<br>1周紧致透亮 |
+
+## 📷 样本 7: images/HR_image11.png
+
+⏱️ *单图推理耗时: 2.93 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 填胶原缝隙 提升充盈度<br>+386% 酸性粘多糖(XVI)<br>+44% 中性粘多糖(XVI)<br>增加细胞外基质粘弹性<br>全新科技 专利超微绷带科技(XVII)<br>更深 更快 更多<br>卓效渗透 倍量吸收<br>倍渗 更深渗透 | 填胶原缝隙 提升充盈度<br>+386%<br>酸性粘多糖<br>+44%<br>中性粘多糖<br>增加细胞外基质粘弹性<br>全新科技<br>专利超微绷带科技<br>更深<br>更快<br>更多<br>卓效渗透 倍量吸收<br>倍渗 更深渗透<br>24小时<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 8: images/Mistine_Sunscreen_image21.png
+
+⏱️ *单图推理耗时: 5.41 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 超抗御光滤携同21型重组胶原 抗老化能力远优于携同3型和17型效果<br>超出超抗御光滤与3型胶原复配效果的的34.62%<br>超出超抗御光滤与17型胶原复配效果的144.43%（39）<br>SGS 28天消费者真人实测：紧致改善+20.47%（40），弹性改善+23.59%（40），皱纹改善-20.24%（40） | 超抗御光滤携同21型重组胶原<br>抗老化能力远优于携同3型和17型效果<br>34.62%<br>超出超抗御光滤<br>与3型胶原复配效果的<br>144.43%39<br>超出超抗御光滤<br>与17型胶原复配效果的<br>Control<br>Model<br>100mg/ml<br>TGF-α<br>1<br>超抗御光滤携同21型重组胶原<br>抗老化能力远优于携同3型和17型效果<br>SGS 28天消费者真人实测<br>紧致改善<br>+20.47%30<br>弹性改善<br>+23.59%30<br>皱纹改善<br>-20.24%30<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 9: images/Lancome_Cream_image19.png
+
+⏱️ *单图推理耗时: 14.40 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 多重场景 奢护润养<br>夜间深度抗老<br>干性肌肤 针对性淡化干细纹<br>秋冬换季 减少秋冬老化痕迹<br>夜间深度抗老（1） 夜晚封闭式奢润抗（1）<br>1.抗老指抵御肌肤老化痕迹，如淡化细纹等。 | 多重场景 奢护润养<br>干性肌肤<br>针对性淡化细纹<br>秋冬换季<br>减少秋冬老化痕迹<br>夜间深度抗老<br>夜晚封闭式润抗老<br>¹ 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑，如淡化细纹等<br>（1） 抗老指瓶底肌肤老化褪黑， |
+
+## 📷 样本 10: images/SKII_Skinpower_Cream_image08.png
+
+⏱️ *单图推理耗时: 1.45 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 苹果肌高光点 提升>5毫米（5）<br>高光点指肌肤状态拟合点的创意描述 | 苹果肌<br>高光点<br>提升>5<br>毫米<br>高光点指肌肤状态拟拟合点的创意描述<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 11: images/Comfy_image05.png
+
+⏱️ *单图推理耗时: 8.66 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 依克多因+羟基积雪草甙<br>天然IV型+重复型+天然I型+天然III型+Mini小分子肽（2）<br>'5D+P' 高保湿体系：<br>5D透明质酸钠+聚谷氨酸钠<br>NEW 天然IV型（4）×GEM（5）快舒缓增效体系：<br>天然IV型（4）+GPIS（6）+依克多因+羟基积雪草甙<br>GHP（7）高保湿体系：<br>甘油葡糖苷+透明质酸钠+聚谷氨酸钠<br>强修护<br>筑屏障<br>高保湿<br>不致敏<br>十大不添加<br>斑贴试验<br>功效更强大<br>PRO 14天 2.0比1.0 更强修护↑+31.8%[8]经皮水分流失值改善率<br>PRO 15分钟 2.0比1.0 更快褪红↑+213.9%[8]皮肤a值改善率<br>PRO 15分钟 2.0比1.0 更高保湿↑+41.3%[8]皮肤水分含量改善率<br>实证更安全<br>55项（9） 过敏原筛查<br>42项（10） 无传统防腐剂<br>温和不刺激（111） 人体皮肤斑贴试验实证<br>权威验证（112） 第三方专业机构数据实证<br>可复美胶原棒2.0（11）<br>全皮层胶原强修护（13）<br>修红快·准·稳<br>舒缓红 强修护 筑屏障 高保湿 | 依克多因+轻基积雪草试<br>「5D+P+」高保湿体系：<br>5D透明质酸钠+聚谷氨酸钠<br>强修护<br>筑屏障<br>高保湿<br>不致敏<br>十大不添加<br>斑试验<br>NEW<br>天然IV型×GEM快舒缓增效体系：<br>天然IV型+GPIS+依克因多+轻基积雪草试<br>GHP高保湿体系：<br>甘油葡糖糖+透明质酸钠+聚谷氨酸钠<br>功效更强大<br>PRO 14天 2.0x1.0 更强修护↑+31.8%<br>PRO 15分钟 2.0x1.0 更强修护↑+213.9%<br>PRO 15分钟 2.0x1.0 更高保湿↑+41.3%<br>实证更安全<br>55项 过敏原筛查<br>42项 无传统防腐剂<br>温和不刺激 人体皮肤斑贴试验实证<br>权威验证 第三方专业机构数据实证<br>可复美胶原棒2.0[1]<br>全皮层胶原强修护<br>修红快·准·稳<br>舒缓红 强修护 筑屏障 高保湿<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 12: images/Lancome_Cream_image11.png
+
+⏱️ *单图推理耗时: 14.92 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 菁纯面霜中（1）涂抹式PDRN（2）<br>24小时 渗透深于微针注入（3）<br>激活线粒体活性+60%（4）<br>1.兰蔻全新菁纯臻颜乳霜轻盈型 国妆网备进字（沪）2024006719；2.首创指兰蔻品牌内首个。涂抹式PDRN指含有水解DNA的复配成分首次用于兰蔻涂抹式的产品中；3.微针注入指作用于表皮层促进成分吸收的微针；4.基于原料与空白对照组相比的体外研究数据，非化妆品本身功效。 | 菁纯面霜中<br>涂抹式 PDRN<br>24小时 渗透深于微针注入<br><br>菁纯面霜<br>使用产品<br>8小时后<br>使用产品<br>24小时后<br>使用产品<br>8小时后<br>使用产品<br>24小时后<br><br>菁纯面霜<br>使用产品<br>8小时后<br>使用产品<br>24小时后<br><br>激活线粒体活性<br>+60%<br><br>¹ 兰蔻全新首创绝美微针，轻型型 国妆网进申（沪）2024006719，² 首创指兰蔻品牌内篇个。涂抹式PDRN含有水解DNA的细胞级27针用于三类型微针的产品中，³ 微针注入作用于表皮层在部分肌肤的微针，⁴ 基于原料与对象对组相比的体外研究数据，非化妆品本身功效。<br><br>（1） （2） （3） （4） （5） （6） （7） （8） （9） （10） （11） （12） （13） （14） （15） （16） （17） （18） （19） （20） （21） （22） （23） （24） （25） （26） （27） （28） （29） （30） （31） （32） （33） （34） （35） （36） （37） （38） （39） （40） （41） （42） （43） （44） （45） （46） （47） （48） （49） （50） （51） （52） （53） （54） （55） （56） （57） （58） （59） （60） （61） （62） （63） （64） （65） （66） （67） （68） （69） （70） （71） （72） （73） （74） （75） （76） （77） （78） （79） （80） （81） （82） （83） （84） （ |
+
+## 📷 样本 13: images/PROYA_Ruby_image24.png
+
+⏱️ *单图推理耗时: 15.66 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 超百万用户的口碑之选<br>天猫面霜类目NO.1（*)）累计爆卖6,600,000+瓶<br>天猫面霜回购榜NO.1（*），天猫面霜好评榜NO.1（*），天猫面霜热销榜NO.1（*） | 超百万用户的口碑之选<br>天猫面霜类目NO.1*<br>累计爆卖6,600,000+瓶<br>天猫面霜回购榜NO.1*<br>天猫面霜好评榜NO.1*<br>天猫面霜热销榜NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评榜<br>NO.1*<br>天猫面霜好评 |
+
+## 📷 样本 14: images/Lancome_Cream_image13.png
+
+⏱️ *单图推理耗时: 1.33 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 传奇柔缎质地<br>法式高定调香<br>愉悦柔润即刻奢养 | 传奇柔缎质地<br>法式高定调香<br>愉悦柔润 即刻奢养<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 15: images/HR_image13.png
+
+⏱️ *单图推理耗时: 15.66 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 精研结构性抗老（I）配方 协同三重修愈（XVII）精粹 根源抵御老化<br>修愈（XVIII）脆弱 [甘草酸二钾] 抑制脆弱因子 缓解肌肤不适<br>根源焕活 [腺苷] 激活细胞信号（XIX）<br>卓效抗氧 [复合护源精粹] 欧洲越桔果提取物+生育酚 抑制自由基 减少氧化损伤 | 精研结构性抗老配方<br>协同三重修护<br>精粹<br>根源抵御老化<br>根源焕活<br>[腺苷]<br>激活细胞信号<br>[甘草酸二钾]<br>抑制脆弱因子<br>缓解肌肤不适<br>卓效抗氧<br>[复合护源精粹]<br>欧洲越桔提取物+生育酚<br>抑制自由基<br>减少氧化损伤<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3 |
+
+## 📷 样本 16: images/LaMer_image13.png
+
+⏱️ *单图推理耗时: 15.92 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| YOUR QUESTIONS ANSWERED<br>深海奥秘 护肤问答<br>Questions 1 精萃水（I）为什么和其他精华水不一样?<br>精萃水（I）中蕴含73种精萃®, 非单一成分添加, 如水更似精华。品牌灵魂成分神奇活性精萃®MIRACLE BROTH™, 深入肌底充能, 促十亿级（IX）细胞新生: 复配多种明星精萃®, 实现精华级抗老（II）, 水光级焕亮, 注能肌底, 源头修护焕亮, 更升维抗老（II）。<br>Questions 2 精萃水（I）可以抗老吗?<br>可以。肌肤老化的源头在于肌底细胞能量不足, 精萃水（I）中的品牌灵魂成分神奇活性精萃®MIRACLE BROTH可以2倍（XI）促生细胞能量之源ATP, 注能10亿级（IX）细胞新生。复配的类肉毒肽（XIV）等抗老（II）成分, 更能深入肌底构筑稳定的支撑结构, 从而达到充盈淡纹的效果。<br>Questions 3 混合皮&油皮&男士可以用精萃水（I）吗?<br>可以。海蓝之谜精萃水（I）适用于各种肌肤类型, 肌源抗老（II）, 淡纹焕亮, 让肌肤养成不易暗敏纹的好肤质。如水似精华的质地触夫即融, 不黏腻、不刺激、不易滋生闭口, 男士须后可用。油皮还可选用海蓝之谜「油皮」精萃水（VXII）, 油皮专研, 精准调节水油、根源祛痘、紧致毛孔、焕现柔光, 帮助油皮养出青春干净肤质 | YOUR QUESTIONS ANSWERED<br>深海奥秘 护肤问答<br>“Questions 1”<br>精萃水*为什么和其他精萃水不一样？<br>精萃水中蕴含73种精萃。非单一成分添加，如水更似精萃。品牌灵魂成分神奇活性精萃*MIRACLE BROTHERM，深入肌底充盈，促十亿级Ⅱ细胞新生。复配多种明星精萃*。实现精华级抗老Ⅰ，水光级焕亮，注能肌底，源头修护焕亮，更升维抗老Ⅰ。<br>“Questions 2”<br>精萃水*可以抗吗？<br>可以。肌肤老化的源头在于肌底细胞能量不足，精萃水*中的品牌灵魂成分神奇活性精萃*MIRACLE BROTHERM可以2倍Ⅱ促生细胞能量之源ATP，注能10亿级Ⅱ细胞新生。复配的一类毒肽ⅡX等抗老Ⅰ成分，更能深入肌底构筑稳定的支撑结构，从而达到充盈淡纹的效果。<br>“Questions 3”<br>混合皮&油皮&男士可以用精萃水吗？<br>可以。海蓝之谜精萃水*适用于各种肌肤类型，肌源抗老Ⅰ，淡纹焕亮，让肌肤养成不易敏暗纹的好肤质。如水似精萃的质地触肤即融，不黏肤、不刺激、不易滋生闭口，男士须后可用。油皮还可选用海蓝之谜*“油皮”精萃水Ⅱ，油皮专研，精准调节水油、根源祛痘、紧致毛孔、焕现柔光，帮助油皮养成青春干肤质。<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （ |
+
+## 📷 样本 17: images/Mistine_Sunscreen_image10.png
+
+⏱️ *单图推理耗时: 15.24 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 第7代全能美白小黄帽（1）7大维度重磅升级（0）<br>防晒升级 实测SPF78 25倍防晒黑（3）防晒增效+80.49%（13）<br>肤感升级 独家肤感响应技术（14）瞬成膜不油腻不搓泥<br>美白升级 持证美白 四周速白6度（15）<br>温和升级 专利馨敏舒（16） 实测不辣眼<br>抗老（17）升级 超抗御光滤携同 21型重组胶原（7/27） 促生1型胶原蛋白 463.5%（18）<br>修护升级 超抗御光滤（7） DNA修护能力 提升389%（20）<br>保湿升级 28天保湿 提升41.47%（9） | 第7代全能美白小黄帽<br>7大维度重磅升级<br>防晒升级盒<br>实测SPF76 25倍防晒黑<br>防晒增效+80%AP%<br>肤感升级盒<br>独家肤感响应技术*<br>瞬成膜不油腻不搓泥<br>美白升级盒<br>持证美白<br>四周速白8度*<br>温和升级盒<br>专利馨敏舒*<br>实测不辣眼<br>抗老"升级盒<br>超抗光滤滤同<br>2级重组胶原蛋白<br>促生1型胶原蛋白<br>463.5%*<br>修护升级盒<br>超抗光滤滤<br>DNA修护能力<br>提升389%*<br>保湿升级盒<br>28天保湿<br>提升41.47%*<br>MISTINE AQUA<br>50 SPF<br>Daily Protection<br>SUN PRO<br>SUITABLE FOR SENSITIVE SKIN<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （ |
+
+## 📷 样本 18: images/Lancome_Cream_image15.png
+
+⏱️ *单图推理耗时: 14.59 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 夜间肌肤抗老（1）的“加速期”<br>夜间是细胞修护和焕新的“黄金时段”<br>肌肤更需密集抗老（1）营养注入<br>但夜晚油脂分泌不足营养难以整夜封存<br>1.抗老指抵御肌肤老化痕迹，如淡化细纹等。 | 夜间 肌肤抗老’的“加速期”<br>夜间 是细胞修护和焕新的“黄金时段”<br>肌肤更需 密集抗老’营养注入<br>但夜晚油脂分泌不足 营养难以整夜封存<br>1. 抗老指抵颊肌老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化/老化 |
+
+## 📷 样本 19: images/PROYA_Ruby_image18.png
+
+⏱️ *单图推理耗时: 1.13 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 4小时提升皮肤关键胶原基因表达(2) | 4小时提升皮肤关键胶原基因表达²<br>Before<br>After<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 20: images/Mistine_Sunscreen_image06.png
+
+⏱️ *单图推理耗时: 5.14 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 第7代全能美白小黄帽（1）重磅升级<br>热带专研（2）清透美白防晒 25倍（3）防晒黑<br>超抗御光滤（7）； 超紫外线超广谱防护；（8）SPF78 实测； 美白防晒双特证；O酒精（6）敏感肌可用<br>诺奖得主共研（4）抗光损（5）0酒精（6）好肤感 | MISTINE<br>第7代全能美白小黄帽'重磅升级<br>热带专研'清透美白防晒<br>25倍防晒黑<br>MISTINE<br>超抗御光滤'<br>超紫外线超防晒防护8<br>MISTINE<br>SPF78<br>实测<br>MISTINE<br>美白防晒<br>双认证<br>MISTINE<br>O酒精<br>敬感肌可用<br>TROPICAL<br>YOUTH<br>ENERGY<br>MISTINE AQUA<br>50% SPF<br>DAILY PROTECTION<br>SUITABLE FOR EVERY DAY<br>诺奖得主共研'抗光损'O酒精'好肤感<br>（1） （3） （VI） （X） （*）<br>TROPICAL<br>YOUTH<br>ENERGY |
+
+## 📷 样本 21: images/Cetaphil_image07.png
+
+⏱️ *单图推理耗时: 15.09 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 骄阳日晒·过度清洁·换季敏感<br>娇嫩肌、敏感肌危'肌'四伏<br>晒后损伤<br>脱毛损伤<br>粗糙颗粒<br>干燥起皮<br>干痒紧绷 | 骄阳日晒·过度清洁·换季敏感<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>（1） （3） （VI） （X） （*）<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤<br>干燥起皮<br>粗糙颗粒<br>干痒紧绷<br>娇嫩肌、敏感肌、危、肌、四伏<br>晒后损伤<br>脱毛损伤 |
+
+## 📷 样本 22: images/Lancome_Genifique_image12.png
+
+⏱️ *单图推理耗时: 15.46 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 协同专研复配成分加持超修 强韧年轻<br>配方实证 +93%强韧（1）10.8%酵母益生精粹（2） 小黑瓶经典成分 强韧稳驻屏障<br>-71%（3）抑制肌肤刺激因子PGE2 甘草酸精粹 高能舒缓成分 源头抑红<br>配方实证 +90%水润（4） | 协同专研复配成分<br>加持超修强韧年轻<br>配方实证<br>[+93%强韧]<br>10.8%酵母益生精粹<br>小黑瓶经典成分<br>强韧稳驻屏障<br>-71%抑制肌肤<br>刺激因子PGE2<br>甘草酸精粹<br>高能舒缓成分<br>源头抑红<br>配方实证<br>[+90%水润]<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） |
+
+## 📷 样本 23: images/LaMer_Cream_image12.png
+
+⏱️ *单图推理耗时: 15.70 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| +丝聚蛋白<br>+原纤维蛋白<br>+胶原蛋白<br>+纤连蛋白<br>+弹性蛋白 | +丝聚蛋白<br>+原纤维蛋白<br>+胶原蛋白<br>+纤连蛋白<br>+弹性蛋白<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （ |
+
+## 📷 样本 24: images/SKII_image10.png
+
+⏱️ *单图推理耗时: 13.34 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| PITERA（TM）源自自然，满载高活能量蕴含肌肤所需的多种微营养素非常亲肤<br>即刻吸收 多层渗透 多方位直达肌底，层层激活肌肤自身焕活能量有效根源抗老修护（9）<br>深源抗氧力 根源抗老（10）<br>内源水磁力 内外双向补水（11）<br>自源修护力 密集修护 强韧屏障 | PITERA™<br>源自自然，满载高活能量<br>蕴含肌肤所需的多种微营养素<br>非常亲肤<br>即刻吸收 多层渗透<br>多方位直达肌底，层层激活肌肤自身焕活能量<br>有效根源抗老修护<br>深源抗氧力<br>根源抗老<br>内源水磁力<br>内外双向补水<br>自源修护力<br>密集修护 强韧屏障<br>（1） （3） （VI） （X） （*）<br>源自自然，满载高活能量<br>蕴含肌肤所需的多种微营养素<br>非常亲肤<br>即刻吸收 多层渗透<br>多方位直达肌底，层层激活肌肤自身焕活能量<br>有效根源抗老修护<br>深源抗氧力<br>根源抗老<br>内源水磁力<br>内外双向补水<br>自源修护力<br>密集修护 强韧屏障<br>PITERA™<br>源自自然，满载高活能量<br>蕴含肌肤所需的多种微营养素<br>非常亲肤<br>即刻吸收 多层渗透<br>多方位直达肌底，层层激活肌肤自身焕活能量<br>有效根源抗老修护<br>深源抗氧力<br>根源抗老<br>内源水磁力<br>内外双向补水<br>自源修护力<br>密集修护 强韧屏障<br>PITERA™<br>源自自然，满载高活能量<br>蕴含肌肤所需的多种微营养素<br>非常亲肤<br>即刻吸收 多层渗透<br>多方位直达肌底，层层激活肌肤自身焕活能量<br>有效根源抗老修护<br>深源抗氧力<br>根源抗老<br>内源水磁力<br>内外双向补水<br>自源修护力<br>密集修护 强韧屏障<br>PITERA™<br>源自自然，满载高活能量<br>蕴含肌肤所需的多种微营养素<br>非常亲肤<br>即刻吸收 多层渗透<br>多方位直达肌底，层层激活肌肤自身焕活能量<br>有效根源抗老修护<br>深源抗氧力<br>根源抗老<br>内源水磁力<br>内外双向补水<br>自源修护力<br>密集修护 强韧屏障<br>PITERA™<br>源自自然，满载高活能量<br>蕴含肌肤所需的多种微营养素<br>非常亲肤<br>即刻吸收 多层渗透<br>多方位直达肌底，层层激活肌肤自身焕活能量<br>有效根源抗老修护<br>深源抗氧力<br>根源抗老<br>内源水磁力<br>内外双向补水<br>自源修护力<br>密集修护 强韧屏障<br>PITERA™<br>源自自然，满载高活能量<br>蕴含肌肤 |
+
+## 📷 样本 25: images/Comfy_image06.png
+
+⏱️ *单图推理耗时: 13.12 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 独家专研重组IV型胶原蛋白<br>全球重组胶原蛋白领导者（13）<br>-96.02%（14） 10分钟 泛红即刻 更快褪红▲<br>+26.09%（14） 2小时 修护力 更强修护▲<br>-42.73%（15） 7天 极限环境泛红值 更多场景▲<br>屏障脆弱与红敏反复双重困扰下 皮肤如何开启修护新解法？▲ | 独家专研<br>重组IV型<br>玻尿酸<br>全球<br>重组胶原蛋白<br>领导者<br>-96[4]<br>10分钟<br>泛红即刻<br>更快褪红<br>+26[4]<br>2小时<br>修护力<br>更强修护<br>-42[5]<br>7天<br>极限环境泛红值<br>更多场景<br>屏障脆弱与红敏反复双重困扰下<br>皮肤如何开启修护新解法？<br>屏障脆弱与红敏反复双重困扰下<br>皮肤如何开启修护新解法？<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） |
+
+## 📷 样本 26: images/SkinCeuticals_image02.png
+
+⏱️ *单图推理耗时: 13.62 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 修丽可A.G.E.面霜 抗糖化 补胶原 紧致淡纹<br>产品成分：30%玻色因溶液（2），4.4%复合抗糖精粹溶液（19），0.2%甘草酸二钾（20）<br>适用肤质：多种肌肤<br>使用方法：每天两次，取适量涂抹于面部及颈部肌肤建议搭配防晒使用 | 「修丽可A.G.E.面霜」<br>抗醯化 补胶原 紧致淡纹<br>产品成分<br>30%玻色因溶液²<br>4.4%复合抗醯精粹溶液¹⁹<br>0.2%甘草酸二钾²⁰<br>•适用肤质 多种肌肤<br>•使用方法 每天两次，取适量<br>涂抹于面部及颈部肌肤<br>建议搭配防晒使用<br>（1） （3） （VI） （X） （*）<br>SKINCEUTICALS<br>A.G.E. INTERCEPTOR<br>ADVANCED FLUO-PROPHYLAXE CREAM<br>TO LIFE, FIRM AND SMOOTH WIRING.<br>CORRECT<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI |
+
+## 📷 样本 27: images/SkinCeuticals_image13.png
+
+⏱️ *单图推理耗时: 2.52 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 全新A.G.E.面霜（1）：8天-75%（6）胶原醣化流失 全链抑制胶原醣化 保护胶原不流失<br>-75%（6）胶原醣化损伤 保护健康胶原不醣化流失<br>绿色区域越亮 表明胶原越多越健康 | 全新A.G.E.面霜<br>8天-75%<br>胶原醌化流失<br>全链抑制胶原醌化<br>保护胶原不流失<br>-75%<br>胶原醌化损伤<br>保护健康胶原不醌化流失<br>使用前<br>使用后<br>绿色区域越亮<br>表明胶原越多越健康<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 28: images/Mistine_Sunscreen_image08.png
+
+⏱️ *单图推理耗时: 13.37 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| MISTINE联合诺奖得主共研(4)智能AI抗光损前沿研究成果<br>智能A抗光损前沿研究成果<br>MISTINE首席科学顾问 亚利耶·瓦谢尔 2013诺贝尔诺奖得主 全球计算生物学领域领军人物 14篇SCI及学术研究 6项（12）公开专利(含1项申请中专利) 3项标准制定参与 | MISTINE联合诺奖得主共研<br>智能AI抗光损前沿研究成果<br>MISTINE首席科学顾问<br>亚利耶·瓦谢尔<br>The influential<br>2013诺贝尔奖得主<br>全球计算生物学领域领军人物<br>14篇<br>SCI及学术研究<br>6项<br>公开专利<br>（含1项申请中专利）<br>3项<br>标准制定参与<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （*）<br>（1） （3） （VI） （X） （* |
+
+## 📷 样本 29: images/ForestCabin_Camellia_image18.png
+
+⏱️ *单图推理耗时: 1.94 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 分子刀生物酶切技术 山茶籽油分子量 -45.66%（17）更易吸收<br>酶切前 山茶籽油分子量 1279g/mol<br>酶切后 山茶籽油分子量 695g/mol | 分子刀生物酶切技术<br>山茶籽油分子量<br>-45.66%¹更易吸收<br>酶切前<br>山茶籽油分子量<br>1279g/mol<br>酶切后<br>山茶籽油分子量<br>695g/mol<br>（1） （3） （VI） （X） （*） |
+
+## 📷 样本 30: images/SKII_image09.png
+
+⏱️ *单图推理耗时: 14.53 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| PITERA（TM）传奇抗老成分（8） | 070<br>PITERA™<br>传奇抗老成分<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>（1） （3） （VI） （X） （*）<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II<br>FACIAL TREATMENT ESSENCE<br>SK-II<br>PITERA<br>SK-II |
+
+## 📷 样本 31: images/SKII_Skinpower_Cream_image05.png
+
+⏱️ *单图推理耗时: 15.81 秒*
+
+| 真实标注 (Ground Truth) | 原始基座模型预测 (Raw Model Prediction) |
+| :--- | :--- |
+| 1套焕启晶透肌肤 臻礼承载心意，予TA节日熠熠生光（2）<br>大红瓶面霜经典版80g<br>进直播间下单享加赠：洁面霜20g*2+神仙水精华30ml+大红瓶面霜经典版15g | 1套焕启晶透肌肤<br>臻礼承载心意，予TA节日熠熠生光<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>大红瓶面霜经典版94g<br>洁面霜20g+2神仙水精华30ml<br>大红瓶面霜经典版1g<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKINPOWER<br>RE-NEW CREAM<br>SK-II<br>SKIN |
+

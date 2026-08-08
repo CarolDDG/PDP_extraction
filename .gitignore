@@ -1,0 +1,26 @@
+# credentials
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# test / tooling caches
+.pytest_cache/
+.ipynb_checkpoints/
+
+# os artifacts
+.DS_Store
+__MACOSX/
+
+# run outputs
+output/
+output2/
+output_*/
+outputs/
+*.log
