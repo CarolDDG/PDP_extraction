@@ -362,19 +362,66 @@ comparison. PaddleOCR wins on speed and cost and loses on chunking; the API
 approaches invert that; the fine-tuned models sit in between and are the only ones
 that learned the claim logic rather than being told it.
 
+### Running the evaluator
+
+[eval_ocr_with_llm.py](Performance_evaluation/eval_ocr_with_llm.py) scores one
+prediction file against the annotations. Both arguments are required; everything
+else has a working default.
+
 ```bash
-python Performance_evaluation/pdp_ocr_llm.py poster.png --json out.json
-python Performance_evaluation/pdp_ocr_llm.py poster.png --no-llm   # raw OCR only
+# local metrics only, no API calls
+python Performance_evaluation/eval_ocr_with_llm.py \
+  --ground-truth gt.json --prediction pred.json --no-llm-judge
+
+# full four-pass alignment, judge decides the uncertain band
+export DEEPSEEK_API_KEY=...
+python Performance_evaluation/eval_ocr_with_llm.py \
+  --ground-truth gt.json --prediction pred.json \
+  --output outputs/qwen_internal.json
 ```
 
-`load_ocr()` → `extract_boxes()` → LLM repair, where the LLM fixes recognition
-errors, separates footnote superscripts fused into headlines, rejoins phrases
-split across boxes, and tags each block with a role. A height filter
-(`MIN_HEIGHT_RATIO = 0.018`) drops fine print first; `MIN_CONF` is deliberately
-low at 0.60 because the LLM repairs shaky reads.
+`--no-llm-judge` and `--llm-judge` are mutually exclusive: the first forces the
+judge off and keeps the run offline and free, the second forces it on. Without
+either, the config decides (default: on).
 
-[notebook.ipynb](Performance_evaluation/notebook.ipynb) aggregates all runs into
-the comparison tables and charts.
+Input JSON is a list of records. Field names are read in order and the first one
+present wins, so most formats work unchanged — file from `source_file` /
+`file_name` / `image`, text from `claim_text` / `lines` / `text` / `prediction`.
+Text may be a list of regions or a newline-separated string; `<EMPTY>` means a
+page with no claims. Only files the prediction mentions are scored — annotations
+it never speaks to land in `summary.unpredicted_files` instead of counting as
+all-missing.
+
+| Flag | Use |
+|---|---|
+| `--output PATH` | where the report goes (default `outputs/ocr_eval.json`) |
+| `--detail` | add per-record missing/extra lists |
+| `--debug` | full pairing trace: every pair, its similarity, why unmatched regions failed |
+| `--verbose` | print each judged pair as it resolves |
+| `--group-similarity` | how completely fragments must reconstruct the whole (default 0.85) |
+| `--no-cache` | ignore the verdict cache and re-judge |
+| `--prompt-file` | swap in a different judge prompt |
+| `--no-merge-credit`<br>`--no-split-credit` | make CER charge a granularity error a second time, as missing plus extra |
+
+The two credit flags are off-by-default escape hatches. Leave them alone unless
+CER should mean "delivered as a usable claim" rather than "read the characters
+correctly" — neither affects chunking accuracy, which always reports every group
+it found. Judge verdicts are cached by content hash, so the same pair resolves
+identically across records and reruns.
+
+`--config` points at a TOML file that overrides any default (thresholds, field
+aliases, normalization). It is optional: a missing file falls back to the
+built-in defaults rather than erroring, so the commands above run as-is.
+
+Stdout is the summary block — `cer`, `wer`, `precision`, `recall`, `f1`,
+`chunking_accuracy`, plus the raw counts behind them
+(`chunks_whole` / `chunks_merged` / `chunks_split`, `merges`, `splits`). The file
+at `--output` carries the same summary plus per-record `items`.
+
+[notebook.ipynb](Performance_evaluation/notebook.ipynb) is the visualization
+layer. It reads the JSON reports and draws the comparison charts — per-model
+accuracy bars, score distributions, and the speed/cost axes — split into internal
+and external test set sections. Analysis only; it computes no metrics of its own.
 
 ---
 
@@ -387,21 +434,28 @@ pip install paddlepaddle paddleocr pillow numpy
 # agentic workflow
 pip install crewai openai pydantic python-dotenv json-repair pytest
 
-# LLM repair pipeline
-pip install anthropic paddleocr pillow numpy
-
 # fine-tuning (CUDA)
 pip install torch transformers peft trl datasets accelerate pillow psutil pynvml
+
+# visualization
+pip install pandas matplotlib seaborn notebook
 ```
+
+The evaluator itself needs no third-party packages — it runs on the standard
+library alone.
 
 Keys come from environment variables — copy `.env.example` to
 `QwenAgenticWorkflow/.env` and fill in:
 
 ```bash
 DASHSCOPE_API_KEY=...     # Qwen-VL, DashScope OpenAI-compatible endpoint
-ANTHROPIC_API_KEY=...     # pdp_ocr_llm.py
 DEEPSEEK_API_KEY=...      # evaluation judge
 ```
+
+The judge also accepts `DEEPSEEK_BASE_URL` / `DEEPSEEK_MODEL`, or the
+`OPENAI_API_KEY` / `OPENAI_BASE_URL` / `EVAL_MODEL` aliases, and `--api-key` /
+`--base-url` / `--model` override both. With `--no-llm-judge` no key is needed
+at all.
 
 `.env` is gitignored. Confirm before your first push:
 
@@ -434,6 +488,8 @@ Fine-Tunning/
   results/               8 reports: 2 models × raw/LoRA × internal/external
 
 Performance_evaluation/
-  pdp_ocr_llm.py         PaddleOCR + LLM repair
-  notebook.ipynb         cross-model aggregation and charts
+  eval_ocr_with_llm.py   the evaluator: four-pass alignment, CER/WER/P/R/F1,
+                         chunking accuracy, DeepSeek judge (stdlib only)
+  notebook.ipynb         visualization: reads the reports, draws the charts
+  README.md              every metric formula in full
 ```
